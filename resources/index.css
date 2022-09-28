@@ -1,0 +1,711 @@
+body {
+    font-size: 1rem;
+    font-family: Montserrat;
+    line-height: 1.9;
+    box-sizing: border-box; 
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+
+
+/* Nav Section */
+
+
+
+.logo {
+    cursor: pointer;
+    align-content: center;
+}
+
+
+.nav-links a:hover {
+	color: #000;
+}
+
+.site-header-nav {
+    position: fixed;
+	background-color: #226cb1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+	width:100%;
+	height:auto;
+	padding: 0.125rem 5.625rem;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.nav-links ul {
+    padding: 0;
+	margin: 0;
+	list-style-type: none;
+	float: right;
+	margin-left: 0;
+	padding: 0;
+	display: flex;
+}
+
+
+/*=== I had to use margin top 1.5rem to align LI's. On other page with same code, I used line-height -5, and that worked ===*/
+.nav-links li {
+    display: inline;
+	padding: 0.9375rem;
+    
+	
+}
+
+
+
+.nav-links a {
+    text-decoration: none;
+
+	font-size: 1.25rem;
+	vertical-align: middle;
+	font-weight: lighter;
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.site-header-nav .social-media {
+display: inline;
+}
+
+
+
+/* Headers */
+
+h1, h2, h3 {
+    font-weight: 900;
+    text-transform: uppercase;
+    
+}
+
+
+/*=== CTA Section ===*/
+
+
+#intro {
+	background-image: url('../images/qmbannerpic.jpg');
+	justify-content: flex-start;
+	align-items: flex-start;
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position:top;
+	text-align: center;
+	display: flex;
+	height: auto;
+	padding-top: 12rem;
+	
+	}
+
+    /*=== display inline block created the perfect square I wanted ===*/
+	
+	#intro .cta {
+
+        position: relative;
+        padding: 1.5rem 2.5rem;
+        border: solid 3px rgba(240, 231, 231, .3);
+        background-color: rgba(240, 231, 231, .3);
+        margin-left: 6.25rem;
+        margin-top: 6.63rem;
+        display: inline-block;	
+	
+	}
+
+	.cta h1 {
+		font-family: Encode Sans SC;
+		font-size: 2rem;
+		font-weight: 100;
+		color: #fff;
+		
+        text-align: center;
+		
+        
+	}
+
+	.cta h2 {
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		font-size: 1.2rem;
+		color: #fff;
+		font-weight: lighter;
+        text-align: center;
+        line-height: 3rem;
+	}
+
+    .cta-container {
+    
+        width: min(90%, 70.5rem);
+    }
+
+
+    /*===== ANCHOR TAG COLORS =======*/
+
+    .light-tone a {
+        font-weight: bold;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .light-tone a:hover {
+        color: #226cb1;
+    }
+
+    .white a {
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+    }
+
+    .white a:hover {
+        color: #226cb1;
+    }
+
+    .solid-tone a {
+        font-weight: bold;
+        text-decoration: none;
+        color: #fff;
+    }
+
+
+    .solid-tone a:hover {
+        color: #6fa5c4;
+    }
+
+
+
+/*===DIV SECTION COLORS ===*/
+
+.light-tone {
+    background-color: #6fa5c4;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.solid-tone {
+    background-color: #0c50aa;
+}
+
+.light-tone p, h1 {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+
+
+
+.white p {
+    color:rgb(17, 16, 16);
+    text-align: center;
+    padding-bottom: 1.5rem;
+    
+}
+
+.white h2 {
+    color: rgb(17, 16, 16);
+    text-align: center;
+    padding-bottom: 1.2rem;
+}
+
+
+
+
+/* When I change text align to justify, it undoes the text align center for light tone div. I  had to created a class for 
+p and h1 to center it */
+.solid-tone ,p ,h2 {
+    color: #fff;
+    text-align: center;
+    
+}
+
+.solid-tone h2 {
+    padding-bottom: 1.2rem;
+}
+
+/*=== Page Sections ===*/
+
+header{
+    padding: 6rem 0;
+}
+
+section {
+    padding: 3rem 0;
+}
+
+
+/*== margin-inline is for left and right margins only; margin-block would be top and bottom. Min-width below our 90% adds padding
+to left and right when minimizing screen, our 70.5rem is the maximum width. MIN WIDTH A KEY ELEMENT TO RESPONSIVE DESIGN ==*/
+
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+
+/*=== Display of flex gives me the pics and text side by side; flex direction give the desired two columns ===*/
+
+.split {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+/*=== had just img display block max with 100; this resulted in logo and menu li pulled down out of place. Set CSS for specific 
+images white img and solid-tone img, and this restored proper placement of logo and li. Also, Max width and display block
+prevents images from spilling out when browser shrinks, resulting in botton horizontal scroll bar. ===*/
+
+.white img {
+    display: block;
+    max-width: 100%;
+    
+}
+
+.solid-tone img {
+    display: block;
+    max-width: 100%;
+}
+
+.Subscribe img {
+    display: block;
+    max-width: 100%;
+}
+
+/*=== BLOG SECTION ===*/
+
+
+
+.blog {
+    background-color: #f4f8fa;
+    height: auto;
+}
+
+.blog h1 {
+    color: rgb(32, 31, 31);
+    text-align: center;
+    line-height: 4rem;
+    font-weight: bold;
+	font-size: 2rem;
+	font-weight: bold;
+    margin-bottom: 4rem;
+}
+
+.blog-images {
+	
+	display: flex;
+    flex-wrap: wrap;
+	
+}
+
+
+.image-size {
+	height: 18.75rem;
+	max-width: 25rem;
+	
+	
+}
+
+#balloon {
+	justify-content: space-around;
+	width: 100%;
+}
+
+#balloon2 {
+	justify-content: space-around;
+	width: 100%;
+	margin-top: 14rem;
+}
+
+
+/*== SUBSCRIBE SECTION ==*/
+
+.Subscribe {
+    background-color: #6fa5c4;
+}
+
+
+.Subscribe h3 {
+    padding-bottom: 1rem;
+    color: #fff;
+    text-align: left;
+    font-weight: lighter;
+}
+
+.Subscribe img {
+    display: block;
+    max-width: 100%;
+    
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    
+}
+
+label {
+    display: block;
+    line-height: 1.5rem;
+    font-weight: lighter;
+    margin-bottom: 0.5rem;
+    
+    
+}
+
+input {
+    height: 2rem;
+    width: 25rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    
+}
+
+
+    
+    #form {
+    
+    color: white;
+    display: table;
+    padding: 1rem;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    }
+
+    .button li {
+        list-style: none;
+        margin-top: 1.5rem;
+	    margin-bottom: 1rem;
+        
+    }
+    
+
+    .button li a {
+    
+    font-style: Montserrat;	
+	color: #fff;
+    background-color: #0c50aa;
+    opacity: 0.9;
+    transition: 0.3s;
+    border: solid 0.20rem rgba(240, 231, 231, .3);
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    border-color: none;
+    border-style: hidden;
+	font-size: 1rem;
+    font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+    cursor: pointer;
+
+    }
+
+    .button li a:hover {
+        background-color: #6fa5c4;
+        color:#fff;
+        border: solid 0.1rem rgb(70, 67, 67);
+    }
+
+
+    /*== SUBSCRIBE1 SECTION ==*/
+
+    .Subscribe1 {
+    background-color: #6fa5c4;
+    }
+
+    .Subscribe1 h1 {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    }
+
+    .Subscribe1 h3 {
+    padding-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-weight: lighter;
+    }
+  
+    /*== qm logo section ==*/
+
+    .QM-Logo {
+    background-color: #226cb1;
+    height:auto;
+    }
+
+    .center-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    }
+
+
+    /*=== FOOTER ===*/
+
+    #footer {
+        background-color: black;
+        clear: both;
+        color: white;
+        padding: 1.5rem;
+        height: auto;
+        }
+
+        #footer p {
+            text-align: center;
+        }
+
+        #footer .social-media {
+            text-align: center;
+            margin-top: 1rem;
+            }
+
+       
+
+/*========================== MEDIA QUERIES =====================================*/
+
+/* media query. note: used first media query to set splits in row format when browser at min width of 40em, then
+used the second of the two below to set all childs of the div at equal width, which makes pictures bigger. 
+The third put margin space to left
+to any div before it, or, it put a space between the text and pics in the two column layout */
+@media (min-width: 40em) {
+    .split {
+        flex-direction: row;
+    }
+
+    .split > * {
+        flex-basis: 100%;
+    }
+
+    .split > * + * {
+        margin-left: 2em;
+    }
+}
+
+/*=== Media query below gives a bit more breathing room/space when the browser at 40em ===*/
+@media (min-width: 40em) {
+    header,
+    section {
+        padding: 7rem 0;
+    }
+} 
+
+/*=== Intro Background Media Query ===*/
+
+@media only screen and (max-width: 31.25rem) {
+
+    #intro {
+        background-image: url('../images/qmbannerpic.jpg');
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        display: flex;
+        height: auto;
+        width: 100%;
+        padding-top: 12rem;
+        
+        }
+        
+}
+
+/*=== Media Query Nav ===*/
+
+@media (min-width: 46rem) and (max-width: 72rem) {
+
+    .nav-links a {
+        text-decoration: none;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+        font-size: 1rem;
+        vertical-align: middle;
+        font-weight: lighter;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+}
+
+@media (max-width: 65.5rem) {
+
+    .nav-links a {
+        text-decoration: none;
+        padding: 8px 8px 8px 8px;
+        font-size: 0.8rem;
+        vertical-align: middle;
+        font-weight: lighter;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+        
+    }
+
+}
+
+
+@media (max-width: 64rem) {
+
+    .nav-links a {
+        text-decoration: none;
+        padding: 8px 8px 8px 8px;
+        font-size: 0.8rem;
+        vertical-align: middle;
+        font-weight: lighter;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+        display: none;
+        
+    }
+
+}
+
+
+/*=== media query to hide social media nav icons ===*/
+
+@media (max-width: 61.125rem) {
+    .site-header-nav .social-media {
+        display: none;
+    }
+}
+
+/*=== Media Query For Mobile Menu Button ===*/
+
+@media (max-width: 64rem) {
+
+.mobile-menu {
+    position: relative;
+    display:inline-block;
+    margin-left: 25%;
+}
+
+.menu-button {
+
+	background-color: #6fa5c4;
+	border: none;
+	
+	color:#ffffff;
+	text-decoration: none;
+	padding: 0.5rem 1.5rem;
+	font-size: 1rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	position:relative;
+	margin-top: 0.50rem;
+
+}
+    
+
+
+   
+
+    /*=== chose a position of relative for drop down to center dropdown menu listing ==*/
+.drop-down {
+	display: none;
+	position: relative;
+	background-color: rgba(240, 231, 231, .3);
+	min-width: 4rem;
+	z-index: 1;
+	margin-top: 0.75rem;
+	}
+
+  
+
+	.drop-down a {
+	color: #000;
+	padding: 0.5rem 0.55rem;
+	text-decoration: none;
+	display: block;
+    text-align: center;
+	}
+
+	.drop-down li {
+		list-style: none;
+	}
+
+	.drop-down a:hover {
+	
+	color: #fff;
+	
+	
+	}
+
+	/*.mobile-menu:hover .drop-down {
+	display: block;
+	}*/
+
+	.mobile-menu:hover .menu-button {
+	background-color: #6fa5c4;
+	color: #000;
+	
+	}
+
+
+}
+
+@media (max-width: 64rem) {
+
+    .social-media-icon {
+
+        display:inline-flex;
+
+    }
+
+}
+
+
+
+/*=== Media Query For Mobile Menu Button HIDE ===*/
+
+@media (min-width: 64rem) and (max-width: 125rem) {
+
+    .mobile-menu {
+    
+        font-style: Montserrat;	
+        color: #fff;
+        background-color: #0c50aa;
+        border: solid 0.20rem rgba(240, 231, 231, .3);
+        padding: 0.5rem 1.5rem;
+        text-decoration: none;
+        border-color: none;
+        border-style: hidden;
+        font-size: 0.75rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+        display: none;
+        
+    }
+
+
+
+}
+
+@media (max-width: 515px) {
+
+    input {
+        height: 2rem;
+        width: 19rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        
+    }
+
+}
