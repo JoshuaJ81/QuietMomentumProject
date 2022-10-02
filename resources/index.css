@@ -663,13 +663,20 @@ to any div before it, or, it put a space between the text and pics in the two co
 
 }
 
-@media (min-width: 420px) and (max-width: 480px){
+@media (min-width: 385px) and (max-width: 480px){
 
     .mobile-menu {
 
     margin-left: -85%;
 
     }
+
+        .image-size {
+            height: 15.625rem;
+            max-width: 21.875rem;
+            
+            
+        }
 
 }
 
