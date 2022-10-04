@@ -510,7 +510,7 @@ to any div before it, or, it put a space between the text and pics in the two co
         border: solid 3px rgba(240, 231, 231, .3);
         background-color: rgba(240, 231, 231, .3);
         margin-left: 5.25rem;
-        margin-top: 6.63rem;
+        margin-top: 0.5rem;
         display: inline-block;	
         align-content: center;
 	
@@ -700,7 +700,7 @@ to any div before it, or, it put a space between the text and pics in the two co
 
     .mobile-menu {
 
-    margin-left: -60;
+    margin-left: -70;
 
     }
 
