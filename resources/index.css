@@ -516,6 +516,19 @@ to any div before it, or, it put a space between the text and pics in the two co
 	
 	}
 
+
+}
+
+@media (max-width: 768px) {
+
+    .logo {
+
+        height: 58px;
+        width: 97px;
+
+    }
+
+
 }
 
 /*=== Media query below gives a bit more breathing room/space when the browser at 40em ===*/
