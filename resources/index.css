@@ -628,7 +628,7 @@ to any div before it, or, it put a space between the text and pics in the two co
 .mobile-menu {
     position: relative;
     display:inline-block;
-    margin-left: 25%;
+    
 }
 
 .menu-button {
@@ -638,7 +638,7 @@ to any div before it, or, it put a space between the text and pics in the two co
 	
 	color:#ffffff;
 	text-decoration: none;
-	padding: 0.3rem 1.3rem;
+	padding: 0.4rem 1.8rem;
 	font-size: 0.85rem;
 	font-weight: 400;
 	text-transform: uppercase;
