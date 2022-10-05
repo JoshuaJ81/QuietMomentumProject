@@ -613,7 +613,7 @@ to any div before it, or, it put a space between the text and pics in the two co
 
 /*=== media query to hide social media nav icons ===*/
 
-@media (max-width: 995px) {
+@media (max-width: 1024px) {
     .site-header-nav .social-media {
         display: none;
     }
