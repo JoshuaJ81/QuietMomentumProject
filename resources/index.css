@@ -604,7 +604,7 @@ to any div before it, or, it put a space between the text and pics in the two co
 
 /*=== Media Query for CTA Container to be centered ===*/
 
-@media (min-width: 395px) and (max-width: 760px) {
+@media (min-width: 395px) and (max-width: 500px) {
 
 	#intro .cta {
 
@@ -612,10 +612,12 @@ to any div before it, or, it put a space between the text and pics in the two co
         padding: 1.5rem 2.5rem;
         border: solid 3px rgba(240, 231, 231, .3);
         background-color: rgba(240, 231, 231, .3);
-        margin-left: 2.5rem;
+        margin-left: auto;
         margin-right: auto;
-        margin-top: 0.1rem;
+        margin-top: 6.63rem;
         display: inline-block;	
+        justify-content: center;
+        justify-items: center;	
         
         
 	
@@ -823,7 +825,8 @@ to any div before it, or, it put a space between the text and pics in the two co
 
     }
 
-        .image-size {
+        .image-size,
+        .post-one {
             height: 13.375rem;
             max-width: 18.75rem;
             
