@@ -29,7 +29,7 @@ body {
 
 .site-header-nav {
     position: fixed;
-	background-color: #226cb1;
+	
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,6 +39,7 @@ body {
 	
     box-sizing: border-box;
     z-index: 1;
+    transition: 500ms ease-in-out background-color;
 }
 
 .nav-links ul {
@@ -72,6 +73,7 @@ body {
 	color: #fff;
 	text-decoration: none;
 	cursor: pointer;
+    transition: all 0.9s ease;
 }
 
 .site-header-nav .social-media {
@@ -208,6 +210,10 @@ h1, h2, h3 {
         color: #6fa5c4;
     }
 
+    .active-nav {
+        background-color: #226cb1;
+        
+    }
 
 
 /*===DIV SECTION COLORS ===*/
@@ -545,7 +551,8 @@ input {
 	color: #fff;
     background-color: #0c50aa;
     opacity: 0.9;
-    transition: 0.3s;
+    
+    transition: all 0.9s ease;
     border: solid 0.20rem rgba(240, 231, 231, .3);
     padding: 1rem 2.5rem;
     text-decoration: none;
